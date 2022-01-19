@@ -7,3 +7,7 @@ proto-gen:
 		--twirp_out=paths=source_relative:. \
 		./rpc/hello/service.proto
 .PHONY: proto-gen
+
+build-server:
+	go build -o server ./cmd/server/main.go
+.PHONY: build-server
