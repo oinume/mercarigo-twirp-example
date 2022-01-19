@@ -1,1 +1,1 @@
-# mercarigo-twirp-example
+# twirp-example

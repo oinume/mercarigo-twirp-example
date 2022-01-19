@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package twirp.example.hello;
+option  go_package = "github.com/oinume/twirp-example/rpc/hello;hello";
+
+service Hello {
+  rpc Echo(EchoRequest) returns (EchoResponse);
+}
+
+message EchoRequest {
+  string message = 1;
+}
+
+message EchoResponse {
+  string message = 1;
+}
